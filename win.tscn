@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bwppvypccv5fg"]
+
+[ext_resource type="Texture2D" uid="uid://5hxmw8em2bi0" path="res://cookie.jpg" id="1_wao2c"]
+
+[node name="win" type="Node2D" unique_id=1094838255]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1467656021]
+offset_left = -197.0
+offset_top = -147.0
+offset_right = 1403.0
+offset_bottom = 940.0
+texture = ExtResource("1_wao2c")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1007754516]
+offset_left = 131.0
+offset_top = 151.0
+offset_right = 950.0
+offset_bottom = 596.0
+theme_override_colors/default_color = Color(0.7647059, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 80
+text = "WINNER GETS A DOUBLE CHUNK CHOCOLATE COOKIE!  🥇🎉🥳"

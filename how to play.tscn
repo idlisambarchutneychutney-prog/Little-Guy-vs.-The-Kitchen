@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://wm8od371rod3"]
+
+[ext_resource type="Script" uid="uid://dyc7bpr2gwawf" path="res://how to play.gd" id="1_enlph"]
+[ext_resource type="Texture2D" uid="uid://e5ie0oaxpgln" path="res://how to play.webp" id="2_js1n7"]
+
+[node name="Node2D" type="Node2D" unique_id=1638484025]
+script = ExtResource("1_enlph")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1613009115]
+offset_right = 1218.0
+offset_bottom = 685.0
+texture = ExtResource("2_js1n7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1430474458]
+offset_right = 1168.0
+offset_bottom = 632.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "🍳 How to Play: Little Guy vs. The Kitchen
+🎯 Objective
+Battle it out in a frantic kitchen showdown! Reduce your opponent's Health Points (HP) from 4 down to 0 before they defeat you. The ultimate winner claims the legendary Big Double Chunk Chocolate Cookie!
+
+🕹️ Controls
+Little Guy (Player 1)
+
+Move: Use W, A, S, D keys to move up, left, down, and right.
+
+Attack: Press R to swing your weapon when within 250 pixels of the Marshmallow.
+
+The Marshmallow (Player 2)
+
+Move: Use the Arrow Keys (Up, Down, Left, Right) to move.
+
+Attack: Press L to strike with your knife when within 250 pixels of Little Guy.
+
+⚔️ Combat Rules
+Health: Both characters start with 4 HP displayed at the top of the screen.
+
+Attack Range: You must be close to your opponent (within 250 pixels) for your attack (R or L) to successfully land and reduce their health.
+
+Visual Feedback: When you press your attack key, your character will instantly swap to their attack/knife image.
+
+Victory: The moment either player's HP reaches 0, the game automatically transitions to the Win Screen to crown the victor and present their hard-earned cookie reward!"
+
+[node name="start" type="Button" parent="." unique_id=650602458]
+offset_left = 390.0
+offset_top = 535.0
+offset_right = 738.0
+offset_bottom = 610.0
+theme_override_font_sizes/font_size = 40
+text = "wanna play now?"
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]

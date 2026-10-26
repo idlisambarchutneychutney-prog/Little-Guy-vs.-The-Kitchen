@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://ctcx5gox5se23"]
+
+[ext_resource type="Texture2D" uid="uid://cs83vr2ncj4u0" path="res://fight_bg.png" id="1_aksos"]
+[ext_resource type="Script" uid="uid://bedtua31ab1sh" path="res://fight_1.gd" id="1_wyn1g"]
+[ext_resource type="Script" uid="uid://cebva1nur0owr" path="res://character_body_2d.gd" id="2_38cq2"]
+[ext_resource type="Texture2D" uid="uid://df4bm1ony7vc3" path="res://lillte guy.png" id="3_aksos"]
+[ext_resource type="Script" uid="uid://ba6pgly1sba6c" path="res://monster_1.gd" id="4_dcnc2"]
+[ext_resource type="Texture2D" uid="uid://c264hvdig8w5w" path="res://marshmallow.png" id="5_dcnc2"]
+[ext_resource type="Script" uid="uid://bvr0ark14ty15" path="res://ui.gd" id="7_tkqtl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_isgqb"]
+size = Vector2(41.5, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6hte"]
+size = Vector2(1141, 90)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ahih"]
+size = Vector2(186.25, 583.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tnygb"]
+size = Vector2(189.5625, 135.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7wbk"]
+size = Vector2(264.5, 53.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0i06h"]
+radius = 59.3043
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irjle"]
+size = Vector2(343.375, 251)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0i06h"]
+a = Vector2(-15, -242)
+b = Vector2(-14, 429)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aksos"]
+size = Vector2(15.5, 663)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dcnc2"]
+size = Vector2(1188.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48fph"]
+size = Vector2(136, 123.5)
+
+[node name="Node2D" type="Node2D" unique_id=1026787611]
+script = ExtResource("1_wyn1g")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=305789538]
+offset_left = -340.0
+offset_top = -255.0
+offset_right = 1448.0
+offset_bottom = 820.0
+texture = ExtResource("1_aksos")
+
+[node name="lillte guy" type="CharacterBody2D" parent="." unique_id=1323066601 groups=["player"]]
+script = ExtResource("2_38cq2")
+
+[node name="Sprite2D" type="Sprite2D" parent="lillte guy" unique_id=1527047696]
+position = Vector2(390.4278, 343.81247)
+scale = Vector2(0.19087486, 0.19376777)
+texture = ExtResource("3_aksos")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lillte guy" unique_id=1812534866]
+position = Vector2(392.75, 345)
+shape = SubResource("RectangleShape2D_isgqb")
+
+[node name="FloorWalls" type="StaticBody2D" parent="." unique_id=1020603294]
+position = Vector2(17, 239)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorWalls" unique_id=375079667]
+position = Vector2(560.5, -190)
+shape = SubResource("RectangleShape2D_a6hte")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="FloorWalls" unique_id=1816125100]
+position = Vector2(1040.125, 133.25)
+shape = SubResource("RectangleShape2D_8ahih")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="FloorWalls" unique_id=774662418]
+position = Vector2(87.21875, -77.5625)
+shape = SubResource("RectangleShape2D_tnygb")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="FloorWalls" unique_id=1106598892]
+position = Vector2(570.75, 392.75)
+shape = SubResource("RectangleShape2D_n7wbk")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="FloorWalls" unique_id=881078651]
+position = Vector2(563, 100)
+shape = SubResource("CircleShape2D_0i06h")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="FloorWalls" unique_id=1390948643]
+position = Vector2(159.3125, 293.5)
+shape = SubResource("RectangleShape2D_irjle")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="FloorWalls" unique_id=362338312]
+shape = SubResource("SegmentShape2D_0i06h")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="FloorWalls" unique_id=731379125]
+position = Vector2(-25.25, 102.5)
+shape = SubResource("RectangleShape2D_aksos")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="FloorWalls" unique_id=2080317834]
+position = Vector2(547, 421)
+shape = SubResource("RectangleShape2D_dcnc2")
+
+[node name="monster1" type="CharacterBody2D" parent="." unique_id=1132313111 groups=["player"]]
+position = Vector2(272, 278)
+script = ExtResource("4_dcnc2")
+
+[node name="Sprite2D" type="Sprite2D" parent="monster1" unique_id=1682229754]
+position = Vector2(558.92523, -105.636566)
+scale = Vector2(0.5462564, 0.4634329)
+texture = ExtResource("5_dcnc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="monster1" unique_id=598800274]
+position = Vector2(562, -106.25)
+shape = SubResource("RectangleShape2D_48fph")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1269986462]
+
+[node name="UI" type="Control" parent="CanvasLayer" unique_id=1467646803 node_paths=PackedStringArray("player", "monster")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("7_tkqtl")
+player = NodePath("../../lillte guy")
+monster = NodePath("../../monster1")
+
+[node name="PlayerHealthLabel" type="Label" parent="CanvasLayer/UI" unique_id=452701237]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 45.0
+offset_right = 93.0
+offset_bottom = 89.0
+
+[node name="MonsterHealthLabel" type="Label" parent="CanvasLayer/UI" unique_id=1129907227]
+layout_mode = 0
+offset_left = 909.0
+offset_top = 51.0
+offset_right = 1003.0
+offset_bottom = 74.0
