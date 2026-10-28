@@ -1,5 +1,5 @@
 ## Little Guy vs. Marshmallow: Kitchen Showdown
-Welcome to Little Guy vs. Marshmallow: Kitchen Showdown! This is a chaotic, fast-paced local 2-player battle game built for Jame Gam—and it's the very first game I've ever made!
+Welcome to Little Guy vs. Marshmallow: Kitchen Showdown! This is a chaotic, fast-paced local 2-player battle game built for Jame Gam-and it's the very first game I've ever made!
 Dive onto the kitchen floor, battle it out with your opponent, and fight to claim the ultimate prize: the legendary Big Double Chunk Chocolate Cookie.
 
 ## Controls
